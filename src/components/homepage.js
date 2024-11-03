@@ -9,14 +9,22 @@ import ListGroup from "react-bootstrap/ListGroup";
 import "./styles.css";
 import { Navbar } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import { GiBlackBook } from "react-icons/gi";  
+import { GiBlackBook } from "react-icons/gi"; 
+import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 'react-router-dom';
+
 
 
 function HomePage(props) {
   const [activeMenu, setActiveMenu] = useState(false);
 
+  const navigate = useNavigate();
+
+
   const handleClickMenu = () => setActiveMenu(prevState => !prevState);
 
+  const handleNavigate = () => {
+    navigate('/profilo')
+  }
 
   return (
     <>
@@ -32,11 +40,13 @@ function HomePage(props) {
       <Row>
         {activeMenu && (
           <Col className="bg-secondary text-white">
-            <Row>
-              <Col>Profilo</Col> {/* Wrapped in a Col for proper structure */}
+            <Row 
+            style={{ cursor: 'pointer' }}
+            onClick={handleNavigate} >
+              <Col className="d-flex justify-content-center  pt-4"> <h3>Profilo</h3></Col>
             </Row>
             <Row>
-              <Col>Eventi</Col> {/* Wrapped in a Col for proper structure */}
+            <Col className="d-flex justify-content-center  pt-4"> <h3>Eventi</h3></Col>
             </Row>
           </Col>
         )}
