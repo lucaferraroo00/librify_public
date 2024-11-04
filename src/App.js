@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import React, { useState } from "react";
 
 import './App.css';
 import {HomePage} from './components/homepage.js'
-import {MyNavbar} from './components/navbar.js'
+import {Profilo} from './components/profilo.js'
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 'react-router-dom';
 
@@ -22,7 +21,9 @@ function App2() {
     <>
     <Routes>
     <Route path= "/" element  = {<HomePage/>} />
-    <Route path= '/pofilo' element  = {<HomePage/>} />
+    <Route path= '/profilo' element  = {<Profilo/>} />
+
+    <Route path="*" element={<Navigate to="/" />} />
     </Routes>
     </>
   );
