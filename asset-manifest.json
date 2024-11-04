@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/librify_public/static/css/main.a22f66c4.css",
+    "main.js": "/librify_public/static/js/main.4c4daf0e.js",
+    "static/js/453.7ad3867d.chunk.js": "/librify_public/static/js/453.7ad3867d.chunk.js",
+    "static/media/lillo_profilo.jpg": "/librify_public/static/media/lillo_profilo.07d81f68448a9d9ae452.jpg",
+    "static/media/Logo_Biblioteche_d0.jpg": "/librify_public/static/media/Logo_Biblioteche_d0.a25a1487f14d8bc88e60.jpg",
+    "index.html": "/librify_public/index.html",
+    "main.a22f66c4.css.map": "/librify_public/static/css/main.a22f66c4.css.map",
+    "main.4c4daf0e.js.map": "/librify_public/static/js/main.4c4daf0e.js.map",
+    "453.7ad3867d.chunk.js.map": "/librify_public/static/js/453.7ad3867d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a22f66c4.css",
+    "static/js/main.4c4daf0e.js"
+  ]
+}
