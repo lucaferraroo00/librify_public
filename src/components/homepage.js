@@ -22,8 +22,12 @@ function HomePage(props) {
 
   const handleClickMenu = () => setActiveMenu(prevState => !prevState);
 
-  const handleNavigate = () => {
+  const handleNavigateProfilo = () => {
     navigate('/profilo')
+  }
+
+  const handleNavigateEventi = () => {
+    navigate('/eventi')
   }
 
   return (
@@ -42,10 +46,12 @@ function HomePage(props) {
           <Col className="bg-secondary text-white">
             <Row 
             style={{ cursor: 'pointer' }}
-            onClick={handleNavigate} >
+            onClick={handleNavigateProfilo} >
               <Col className="d-flex justify-content-center  pt-4"> <h3>Profilo</h3></Col>
             </Row>
-            <Row>
+            <Row
+            style={{ cursor: 'pointer' }}
+            onClick={handleNavigateEventi} >
             <Col className="d-flex justify-content-center  pt-4"> <h3>Eventi</h3></Col>
             </Row>
           </Col>
