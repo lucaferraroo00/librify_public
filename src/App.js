@@ -6,6 +6,8 @@ import {Profilo} from './components/profilo.js'
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 'react-router-dom';
 import { Eventi } from "./components/eventi.js";
+import { Crea } from "./components/crea.js";
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App2() {
     <Route path= "/" element  = {<HomePage/>} />
     <Route path= '/profilo' element  = {<Profilo/>} />
     <Route path= '/eventi' element  = {<Eventi/>} />
+    <Route path= '/crea' element  = {<Crea/>} />
 
 
     <Route path="*" element={<Navigate to="/" />} />

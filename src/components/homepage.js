@@ -30,6 +30,10 @@ function HomePage(props) {
     navigate('/eventi')
   }
 
+  const handleNavigateCrea= () => {
+    navigate('/crea')
+  }
+
   return (
     <>
     <Navbar bg="primary" className="d-flex justify-content-between align-items-center fixed-top">
@@ -54,6 +58,11 @@ function HomePage(props) {
             onClick={handleNavigateEventi} >
             <Col className="d-flex justify-content-center  pt-4"> <h3>Eventi</h3></Col>
             </Row>
+            <Row
+            style={{ cursor: 'pointer' }}
+            onClick={handleNavigateCrea} >
+            <Col className="d-flex justify-content-center  pt-4"> <h3>Crea</h3></Col>
+            </Row>
           </Col>
         )}
         <Col {...(activeMenu ? { md: 10 } : {})}>
@@ -66,7 +75,7 @@ function HomePage(props) {
           <div className="container mt-2">
             <RectangleComponent
               title="Dorian Gray"
-              text="This is some text inside the rectangle.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa asmasmaaaaaaaaa  nnn"
+              text="This is some text inside the rectangle."
               borderColor="blue" // Change the color as needed
               image={dorian}
             />
