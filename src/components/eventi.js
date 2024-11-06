@@ -35,12 +35,12 @@ function Eventi(props) {
         <Container fluid className="navbar-spacing mb-4">
             <Row className="d-flex justify-content-center pt-4">
                 <Col className="d-flex justify-content-center">
-                <h1   style={{ color: "#33c1ff" }}>
+                <h1   style={{ color: "#33c1ff", textDecoration: "underline" }}>
                 Eventi
                 </h1>
                 </Col>
             </Row>
-            <Row>
+            <Row className="mt-3">
                 <Col>
                     <EventoRiquadro text="Gita della firenze dantesca" />
                 </Col>
@@ -77,7 +77,7 @@ function EventoRiquadro({ text }) {
           borderRadius: "20px",
         }}
       >
-        <Row>
+        <Row className="mb-1 mt-1">
             <Col>
                 <img 
                     src={sei_nov} 
