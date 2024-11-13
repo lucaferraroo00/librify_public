@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 're
 import { Eventi } from "./components/eventi.js";
 import { Crea } from "./components/crea.js";
 import { GruppiLettura } from "./components/gruppiLettura.js";
+import { Catalogo } from "./components/catalogo.js";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App2() {
     <Route path= '/eventi' element  = {<Eventi/>} />
     <Route path= '/crea' element  = {<Crea/>} />
     <Route path= '/gruppilettura' element  = {<GruppiLettura/>} />
+    <Route path= '/catalogo' element  = {<Catalogo/>} />
 
 
     <Route path="*" element={<Navigate to="/" />} />

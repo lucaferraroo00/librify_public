@@ -54,7 +54,7 @@ function GruppiLettura(props) {
         {activeMenu && (
             <MenuList></MenuList>
         )}
-        <Col {...(activeMenu ? { md: 10 } : {})}>
+        <Col {...(activeMenu ? { md: 9 } : {})}>
         <Container fluid className="mb-4">
             <Row className="d-flex justify-content-center pt-4">
                 <Col className="d-flex justify-content-center">

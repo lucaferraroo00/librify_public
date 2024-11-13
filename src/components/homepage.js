@@ -24,18 +24,6 @@ function HomePage(props) {
 
   const handleClickMenu = () => setActiveMenu(prevState => !prevState);
 
-  const handleNavigateProfilo = () => {
-    navigate('/profilo')
-  }
-
-  const handleNavigateEventi = () => {
-    navigate('/eventi')
-  }
-
-  const handleNavigateCrea= () => {
-    navigate('/crea')
-  }
-
   const handleClickHome = () => {
     navigate('/')
   }
@@ -66,7 +54,7 @@ function HomePage(props) {
         {activeMenu && (
           <MenuList></MenuList>
         )}
-        <Col {...(activeMenu ? { md: 10 } : {})}>
+        <Col {...(activeMenu ? { md: 9 } : {})}>
           <Row className="d-flex justify-content-center mt-1">
             <img
               src={logo}

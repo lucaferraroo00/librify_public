@@ -62,7 +62,7 @@ function Profilo(props) {
         {activeMenu && (
           <MenuList className="vh-100"></MenuList>
         )}
-        <Col {...(activeMenu ? { md: 10 } : {})}>
+        <Col {...(activeMenu ? { md: 9 } : {})}>
         <Row className="d-flex justify-content-center">
             <img
               src={lillo_img}

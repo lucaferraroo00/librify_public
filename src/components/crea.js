@@ -27,18 +27,6 @@ function Crea(props) {
 
   const handleClickMenu = () => setActiveMenu(prevState => !prevState);
 
-    
-  const handleNavigateProfilo = () => {
-    navigate('/profilo')
-  }
-
-  const handleNavigateEventi = () => {
-    navigate('/eventi')
-  }
-
-  const handleNavigateCrea= () => {
-    navigate('/crea')
-  }
 
   return (
     <Container fluid>
@@ -65,7 +53,7 @@ function Crea(props) {
         {activeMenu && (
           <MenuList></MenuList>
         )}
-        <Col {...(activeMenu ? { md: 10 } : {})}>
+        <Col {...(activeMenu ? { md: 9 } : {})}>
       <Container fluid className="mb-4">
         <Row className="pt-4">
           <Col className="d-flex justify-content-center">
