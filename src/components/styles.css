@@ -6,3 +6,9 @@
 .icon-search-size{
     font-size: "2.1rem"
 }
+
+.hover-effect:hover {
+    background-color: #303132 !important ;/* Change to a darker shade of info */
+    cursor: pointer; /* Change the cursor to a pointer */
+    transition: background-color 1.3s ease; /* Smooth transition */
+  }

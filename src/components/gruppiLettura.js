@@ -9,6 +9,10 @@ import { BsHouseDoor } from "react-icons/bs";
 import sei_nov from "./6_nov.png"
 import "./styles.css";
 import {MenuList} from "./menuList.js"
+import norw_wood from "./cuore_spez.png"
+import Modal from 'react-bootstrap/Modal';
+
+
 
 
 
@@ -59,6 +63,41 @@ function GruppiLettura(props) {
                 </h2>
                 </Col>
             </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood} modal_text="Leggiti questi libri.."></GruppoRiquadro>
+            </Col>
+            </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            </Col>
+            </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            </Col>
+            </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            </Col>
+            </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            </Col>
+            </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            </Col>
+            </Row>
+            <Row className="m-3">
+            <Col>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            </Col>
+            </Row>
             
         </Container>
         </Col>
@@ -67,29 +106,47 @@ function GruppiLettura(props) {
     );
 }
 
-function EventoRiquadro({ text }) {
+function GruppoRiquadro({ text, grp_image, modal_text }) {
+
+    const [show, setShow] = useState(true);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     return (
-      <Container
-        className="d-flex bg-info justify-content-center"
-        style={{
-          borderRadius: "20px",
-        }}
-      >
-        <Row className="mb-1 mt-1">
-            <Col>
-                <img 
-                    src={sei_nov} 
-                    style={{ 
-                        width: "200px", 
-                    }}
-                />
-        </Col>
-        <Col className="d-flex align-items-center">
-        <h3 className=" text-white">{text}</h3>
-        </Col>
-        </Row>
-      </Container>
-    );
+        <>
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Body>{modal_text}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+        <Container
+          className="d-flex bg-info justify-content-center hover-effect"
+          style={{
+            borderRadius: "20px",
+          }}
+          onClick={handleShow}
+        >
+          <Row className="d-flex mb-1 mt-1">
+              <Col>
+                  <img 
+                      src={grp_image} 
+                      style={{ 
+                          width: "80px", 
+                          backgroundColor: "transparent",
+                      }}
+                  />
+          </Col>
+          <Col className="d-flex align-items-center">
+          <p className=" text-white">{text}</p>
+          </Col>
+          </Row>
+        </Container>
+        </>
+    )
   }
 
 export { GruppiLettura };
