@@ -11,6 +11,7 @@ import { Navbar } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { GiBlackBook } from "react-icons/gi"; 
 import { CiMenuBurger } from "react-icons/ci";
+import { BsHouseDoor } from "react-icons/bs";
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 'react-router-dom';
 
 
@@ -35,8 +36,13 @@ function HomePage(props) {
     navigate('/crea')
   }
 
+  const handleClickHome = () => {
+    navigate('/')
+  }
+
   return (
     <>
+    <Container fluid>
     <Row className="d-flex align-items-center sticky-sm-top bg-primary">
       <Col className="m-1">
         <CiMenuBurger
@@ -49,7 +55,11 @@ function HomePage(props) {
           <h1 className="text-white">Librify</h1>
           <GiBlackBook style={{ fontSize: '2.1rem', color:"white" }} />
         </Col>
-        <Col>
+        <Col className="d-flex d-flex justify-content-end m-1">
+        <BsHouseDoor
+          className=""
+          style={{ fontSize: '2.1rem', color:"white", cursor:"pointer"}} 
+          onClick={handleClickHome}></BsHouseDoor>
         </Col>
       </Row>
       <Row>
@@ -117,6 +127,7 @@ function HomePage(props) {
           </div>
         </Col>
       </Row>
+      </Container>
     </>
   );
 }
