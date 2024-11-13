@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/librify_public/static/css/main.b6852e85.css",
-    "main.js": "/librify_public/static/js/main.5d0a6cf6.js",
+    "main.css": "/librify_public/static/css/main.6062d679.css",
+    "main.js": "/librify_public/static/js/main.0d4f1cd3.js",
     "static/js/453.7ad3867d.chunk.js": "/librify_public/static/js/453.7ad3867d.chunk.js",
     "static/media/lillo_profilo.jpg": "/librify_public/static/media/lillo_profilo.07d81f68448a9d9ae452.jpg",
+    "static/media/cuore_spez.png": "/librify_public/static/media/cuore_spez.a8a2a7e75f951f8805ff.png",
     "static/media/Logo_Biblioteche_d0.jpg": "/librify_public/static/media/Logo_Biblioteche_d0.a25a1487f14d8bc88e60.jpg",
     "static/media/6_nov.png": "/librify_public/static/media/6_nov.d51bfc279170ccd59be8.png",
     "static/media/norwegian_wood.jfif": "/librify_public/static/media/norwegian_wood.ce6855af8912e0aaebe1.jfif",
     "index.html": "/librify_public/index.html",
-    "main.b6852e85.css.map": "/librify_public/static/css/main.b6852e85.css.map",
-    "main.5d0a6cf6.js.map": "/librify_public/static/js/main.5d0a6cf6.js.map",
+    "main.6062d679.css.map": "/librify_public/static/css/main.6062d679.css.map",
+    "main.0d4f1cd3.js.map": "/librify_public/static/js/main.0d4f1cd3.js.map",
     "453.7ad3867d.chunk.js.map": "/librify_public/static/js/453.7ad3867d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6852e85.css",
-    "static/js/main.5d0a6cf6.js"
+    "static/css/main.6062d679.css",
+    "static/js/main.0d4f1cd3.js"
   ]
 }
