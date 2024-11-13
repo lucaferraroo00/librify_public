@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 'react-router-dom';
 import { Eventi } from "./components/eventi.js";
 import { Crea } from "./components/crea.js";
+import { GruppiLettura } from "./components/gruppiLettura.js";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App2() {
     <Route path= '/profilo' element  = {<Profilo/>} />
     <Route path= '/eventi' element  = {<Eventi/>} />
     <Route path= '/crea' element  = {<Crea/>} />
+    <Route path= '/gruppilettura' element  = {<GruppiLettura/>} />
 
 
     <Route path="*" element={<Navigate to="/" />} />

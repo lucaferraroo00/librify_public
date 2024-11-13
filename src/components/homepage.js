@@ -13,7 +13,7 @@ import { GiBlackBook } from "react-icons/gi";
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate} from 'react-router-dom';
-
+import {MenuList} from "./menuList.js"
 
 
 function HomePage(props) {
@@ -64,23 +64,7 @@ function HomePage(props) {
       </Row>
       <Row>
         {activeMenu && (
-          <Col className="bg-secondary text-white">
-            <Row 
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateProfilo} >
-              <Col className="d-flex justify-content-center  pt-4"> <h3>Profilo</h3></Col>
-            </Row>
-            <Row
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateEventi} >
-            <Col className="d-flex justify-content-center  pt-4"> <h3>Eventi</h3></Col>
-            </Row>
-            <Row
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateCrea} >
-            <Col className="d-flex justify-content-center  pt-4"> <h3>Crea</h3></Col>
-            </Row>
-          </Col>
+          <MenuList></MenuList>
         )}
         <Col {...(activeMenu ? { md: 10 } : {})}>
           <Row className="d-flex justify-content-center mt-1">

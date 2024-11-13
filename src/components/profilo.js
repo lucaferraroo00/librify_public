@@ -7,6 +7,8 @@ import { BrowserRouter as Router, useNavigate, Navigate} from 'react-router-dom'
 import lillo_img from "./lillo_profilo.jpg";
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
+import {MenuList} from "./menuList.js"
+
 
 import "./styles.css";
 
@@ -56,25 +58,9 @@ function Profilo(props) {
           onClick={handleClickHome}></BsHouseDoor>
         </Col>
       </Row>
-      <Row>
+      <Row fluid>
         {activeMenu && (
-          <Col className="bg-secondary text-white d-flex flex-column vh-100" >
-            <Row 
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateProfilo} >
-              <Col className="d-flex justify-content-center  pt-4"> <h3>Profilo</h3></Col>
-            </Row>
-            <Row
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateEventi} >
-            <Col className="d-flex justify-content-center  pt-4"> <h3>Eventi</h3></Col>
-            </Row>
-            <Row
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateCrea} >
-            <Col className="d-flex justify-content-center pt-4">  <h3>Crea</h3></Col>
-            </Row>
-          </Col>
+          <MenuList className="vh-100"></MenuList>
         )}
         <Col {...(activeMenu ? { md: 10 } : {})}>
         <Row className="d-flex justify-content-center">

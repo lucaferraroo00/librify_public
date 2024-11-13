@@ -14,6 +14,7 @@ import { BsFillPlusCircleFill, BsSearch } from "react-icons/bs";
 import norw_wood from "./norwegian_wood.jfif"
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
+import {MenuList} from "./menuList.js"
 
 function Crea(props) {
   const [activeMenu, setActiveMenu] = useState(false);
@@ -62,23 +63,7 @@ function Crea(props) {
       </Row>
         <Row fluid>
         {activeMenu && (
-          <Col className="bg-secondary text-white d-flex flex-column" >
-            <Row 
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateProfilo} >
-              <Col className="d-flex justify-content-center  pt-4"> <h3>Profilo</h3></Col>
-            </Row>
-            <Row
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateEventi} >
-            <Col className="d-flex justify-content-center  pt-4"> <h3>Eventi</h3></Col>
-            </Row>
-            <Row
-            style={{ cursor: 'pointer' }}
-            onClick={handleNavigateCrea} >
-            <Col className="d-flex justify-content-center pt-4">  <h3>Crea</h3></Col>
-            </Row>
-          </Col>
+          <MenuList></MenuList>
         )}
         <Col {...(activeMenu ? { md: 10 } : {})}>
       <Container fluid className="mb-4">

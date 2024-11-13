@@ -12,7 +12,7 @@ import {MenuList} from "./menuList.js"
 
 
 
-function Eventi(props) {
+function GruppiLettura(props) {
 
     const [activeMenu, setActiveMenu] = useState(false);
 
@@ -20,18 +20,6 @@ function Eventi(props) {
 
 
     const handleClickMenu = () => setActiveMenu(prevState => !prevState);
-
-    const handleNavigateProfilo = () => {
-        navigate('/profilo')
-    }
-
-    const handleNavigateEventi = () => {
-        navigate('/eventi')
-    }
-
-    const handleNavigateCrea= () => {
-        navigate('/crea')
-    }
 
     const handleClickHome = () => {
         navigate('/')
@@ -66,35 +54,12 @@ function Eventi(props) {
         <Container fluid className="mb-4">
             <Row className="d-flex justify-content-center pt-4">
                 <Col className="d-flex justify-content-center">
-                <h1   style={{ color: "#33c1ff", textDecoration: "underline" }}>
-                Eventi
-                </h1>
+                <h2   style={{ color: "#33c1ff", textDecoration: "underline" }}>
+                Ciao SO_LIBRO, cosa vuoi leggere?
+                </h2>
                 </Col>
             </Row>
-            <Row className="mt-3">
-                <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
-                </Col>
-                <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
-                </Col>
-            </Row>
-            <Row className="mt-3">
-                <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
-                </Col>
-                <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
-                </Col>
-            </Row>
-            <Row className="mt-3">
-                <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
-                </Col>
-                <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
-                </Col>
-            </Row>
+            
         </Container>
         </Col>
         </Row>
@@ -127,4 +92,4 @@ function EventoRiquadro({ text }) {
     );
   }
 
-export { Eventi };
+export { GruppiLettura };
