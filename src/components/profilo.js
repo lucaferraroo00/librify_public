@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { BrowserRouter as Router, useNavigate, Navigate} from 'react-router-dom';
-import lillo_img from "./lillo_profilo.jpg";
+import lillo_img from "./so-lillo.png";
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
 import {MenuList} from "./menuList.js"
@@ -68,7 +68,7 @@ function Profilo(props) {
               src={lillo_img}
               className="rounded-circle"
               style={{ 
-                    width: "500px", 
+                    width: "430px", 
                     marginTop: "20px",
                     borderColor: "#33c1ff",
                     borderWidth: "20px",
