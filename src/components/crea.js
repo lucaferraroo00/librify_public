@@ -63,7 +63,7 @@ function Crea(props) {
         <Row className="pt-4">
           <Col className="d-flex align-items-center justify-content-center">
           <BsHeartFill style={{ fontSize: '2.1rem', color:"red" }} />
-          <h1 style={{ color: "#33c1ff", textDecoration: "underline" }}>
+          <h1 style={{  textDecoration: "underline" }}>
               La mia booklist
             </h1>
         </Col>
@@ -109,7 +109,7 @@ function Crea(props) {
 function LibroRiquadro({ text, copertina_libro }) {
     return (
       <Container
-        className="d-flex bg-info justify-content-center"
+        className="d-flex bg-primary justify-content-center"
         style={{
           borderRadius: "20px",
         }}
