@@ -58,44 +58,34 @@ function GruppiLettura(props) {
         <Container fluid className="mb-4">
             <Row className="d-flex justify-content-center pt-4">
                 <Col className="d-flex justify-content-center">
-                <h2   style={{ color: "#33c1ff", textDecoration: "underline" }}>
+                <h2   style={{ textDecoration: "underline" }}>
                 Ciao SO_LIBRO, cosa vuoi leggere?
                 </h2>
                 </Col>
             </Row>
             <Row className="m-3">
             <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood} modal_text="Leggiti questi libri.."></GruppoRiquadro>
+            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood} modal_title={"Gruppo libri per single"}></GruppoRiquadro>
             </Col>
             </Row>
             <Row className="m-3">
             <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            <GruppoRiquadro text="Libri russi (RU)" modal_title={"Gruppo libri russi"} grp_image={norw_wood} ></GruppoRiquadro>
             </Col>
             </Row>
             <Row className="m-3">
             <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            <GruppoRiquadro text="Meno di 150 pagine" modal_title={"Gruppo libri brevi"} grp_image={norw_wood}></GruppoRiquadro>
             </Col>
             </Row>
             <Row className="m-3">
             <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            <GruppoRiquadro text="True Crime" ></GruppoRiquadro>
             </Col>
             </Row>
-            <Row className="m-3">
+            <Row className="m-6">
             <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
-            </Col>
-            </Row>
-            <Row className="m-3">
-            <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
-            </Col>
-            </Row>
-            <Row className="m-3">
-            <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood}></GruppoRiquadro>
+            <GruppoRiquadro text="Per conoscere il mondo" grp_image={norw_wood}></GruppoRiquadro>
             </Col>
             </Row>
             
@@ -106,7 +96,7 @@ function GruppiLettura(props) {
     );
 }
 
-function GruppoRiquadro({ text, grp_image, modal_text }) {
+function GruppoRiquadro({ text, grp_image, modal_title }) {
 
     const [show, setShow] = useState(false);
 
@@ -116,32 +106,45 @@ function GruppoRiquadro({ text, grp_image, modal_text }) {
     return (
         <>
         <Modal show={show} onHide={handleClose}>
-        <Modal.Body>{modal_text}</Modal.Body>
+          <Modal.Header>
+            <h3>{modal_title}</h3>
+            </Modal.Header>
+        <Modal.Body>
+          <Row>
+            <Col className="d-flex justify-content-center">
+          <img 
+                      src={grp_image} 
+                      style={{ 
+                        width: "100%", // Make it take full width of its container
+                        maxWidth: "80px", // Sets a max width limit
+                      }}
+                  />
+                  </Col>
+                  <Col className="d-flex justify-content-center">
+                  <img 
+                      src={grp_image} 
+                      style={{ 
+                        width: "100%", // Make it take full width of its container
+                        maxWidth: "80px", // Sets a max width limit
+                      }}
+                  />
+                  </Col>
+          </Row>
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
+          <Button>Iscriviti</Button>
         </Modal.Footer>
       </Modal>
         <Container
-          className="d-flex bg-info justify-content-center hover-effect"
+          className="d-flex bg-primary justify-content-center hover-effect"
           style={{
             borderRadius: "20px",
           }}
           onClick={handleShow}
         >
           <Row className="d-flex mb-1 mt-1">
-              <Col>
-                  <img 
-                      src={grp_image} 
-                      style={{ 
-                          width: "80px", 
-                          backgroundColor: "transparent",
-                      }}
-                  />
-          </Col>
           <Col className="d-flex align-items-center">
-          <p className=" text-white">{text}</p>
+          <h4 className=" text-white">{text}</h4>
           </Col>
           </Row>
         </Container>
