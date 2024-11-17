@@ -12,6 +12,9 @@ import ReactSearchBox from "react-search-box";
 import "./styles.css";
 import { BsFillPlusCircleFill, BsSearch } from "react-icons/bs";
 import norw_wood from "./norwegian_wood.jfif"
+import io_e_te from "./io-e-te.jpg"
+import cime_temp from "./cime-temp.jpg"
+
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
 import {MenuList} from "./menuList.js"
@@ -78,17 +81,17 @@ function Crea(props) {
         </Row>
         <Row className="m-3">
             <Col>
-            <LibroRiquadro text="norwegian wood, Murakami" copertina_libro={norw_wood}></LibroRiquadro>
+            <LibroRiquadro text="Norwegian wood, Haruki Murakami" copertina_libro={norw_wood}></LibroRiquadro>
             </Col>
         </Row>
         <Row className="m-3">
             <Col>
-            <LibroRiquadro text="norwegian wood, Murakami" copertina_libro={norw_wood}></LibroRiquadro>
+            <LibroRiquadro text="Io e te, Niccolò Ammaniti" copertina_libro={io_e_te}></LibroRiquadro>
             </Col>
         </Row>
         <Row className="m-3">
             <Col>
-            <LibroRiquadro text="norwegian wood, Murakami" copertina_libro={norw_wood}></LibroRiquadro>
+            <LibroRiquadro text="Cime tempestose, Emily Brontë" copertina_libro={cime_temp}></LibroRiquadro>
             </Col>
         </Row>
         
