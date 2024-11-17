@@ -6,12 +6,18 @@ import Button from "react-bootstrap/Button";
 import { BrowserRouter as Router, useNavigate, Navigate} from 'react-router-dom';
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
-import sei_nov from "./6_nov.png"
 import "./styles.css";
 import {MenuList} from "./menuList.js"
 import copertina1 from "./calvino_cop_1.jfif"
 import ReactSearchBox from "react-search-box";
 import Form from 'react-bootstrap/Form';
+import cat1 from "./cat1.jpg"
+import cat2 from "./cat2.jpg"
+import cat3 from "./cat3.jpg"
+import cat4 from "./cat4.jpg"
+import cat5 from "./cat5.jpg"
+import cat6 from "./cat6.jpg"
+import cat7 from "./cat7.jpg"
 
 
 
@@ -57,37 +63,37 @@ function Catalogo(props) {
         <Container fluid className="mb-4">
             <Row className="d-flex justify-content-center pt-4">
                 <Col className="d-flex ">
-                <h1   style={{ color: "#33c1ff", textDecoration: "underline" }}>
+                <h1   style={{ textDecoration: "underline" }}>
                 Catalogo
                 </h1>
                 </Col>
                 <Col>
-                <Form.Control type="email" placeholder="Italo Calv" />
+                <Form.Control type="email" placeholder="Italo Calv|" />
           </Col>
             </Row>
             <Row className="mt-3">
                 <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
+                    <EventoRiquadro imag={cat1} />
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro imag={cat2} />
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro imag={cat3} />
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro imag={cat4} />
                 </Col>
             </Row>
             <Row className="mt-3">
                 <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
+                    <EventoRiquadro imag={cat5} />
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro imag={cat6}/>
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro imag={cat7}/>
                 </Col>
             </Row>
         </Container>
@@ -97,7 +103,7 @@ function Catalogo(props) {
     );
 }
 
-function EventoRiquadro({ text }) {
+function EventoRiquadro({ text, imag }) {
     return (
       <Container
         className="d-flex justify-content-center"
@@ -107,12 +113,12 @@ function EventoRiquadro({ text }) {
       >
         <Row className="d-flex mb-1 mt-1">
         <img 
-          src={copertina1} 
+          src={imag} 
           alt={text}
           className="img-fluid" // This makes the image responsive
           style={{ 
             width: "100%", // Make it take full width of its container
-            maxWidth: "300px", // Sets a max width limit
+            maxWidth: "250px", // Sets a max width limit
           }}
         />
         </Row>
