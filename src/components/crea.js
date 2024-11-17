@@ -18,6 +18,8 @@ import cime_temp from "./cime-temp.jpg"
 import { CiMenuBurger } from "react-icons/ci";
 import { BsHouseDoor } from "react-icons/bs";
 import {MenuList} from "./menuList.js"
+import { BsHeartFill } from "react-icons/bs";
+
 
 function Crea(props) {
   const [activeMenu, setActiveMenu] = useState(false);
@@ -59,11 +61,12 @@ function Crea(props) {
         <Col {...(activeMenu ? { md: 9 } : {})}>
       <Container fluid className="mb-4">
         <Row className="pt-4">
-          <Col className="d-flex justify-content-center">
-            <h1 style={{ color: "#33c1ff", textDecoration: "underline" }}>
+          <Col className="d-flex align-items-center justify-content-center">
+          <BsHeartFill style={{ fontSize: '2.1rem', color:"red" }} />
+          <h1 style={{ color: "#33c1ff", textDecoration: "underline" }}>
               La mia booklist
             </h1>
-          </Col>
+        </Col>
         </Row>
         <Row className="d-flex  align-items-center pt-4">
           <Col className="d-flex justify-content-end">
