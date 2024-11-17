@@ -9,6 +9,14 @@ import { BsHouseDoor } from "react-icons/bs";
 import sei_nov from "./6_nov.png"
 import "./styles.css";
 import {MenuList} from "./menuList.js"
+import { BsCalendar2 } from "react-icons/bs";
+import due_dic from "./due-dic.png"
+import ventisette_nov from "./ventisette-nov.png"
+import ventotto_ot from "./28-ot.png"
+import tredici from "./tredici-15-nov.png"
+import dodici from "./12-dic.png"
+import venti from "./20-dic.png"
+
 
 
 
@@ -65,34 +73,35 @@ function Eventi(props) {
         <Col {...(activeMenu ? { md: 10 } : {})}>
         <Container fluid className="mb-4">
             <Row className="d-flex justify-content-center pt-4">
-                <Col className="d-flex justify-content-center">
-                <h1   style={{ color: "#33c1ff", textDecoration: "underline" }}>
-                Eventi
-                </h1>
+            <Col className="d-flex align-items-center justify-content-center">
+          <BsCalendar2 style={{ fontSize: '2.1rem' }} className="m-1"/>
+          <h1 style={{  textDecoration: "underline" }}>
+              Eventi
+            </h1>
+        </Col>
+            </Row>
+            <Row className="mt-3">
+                <Col>
+                    <EventoRiquadro text="CINEFORUM: Colazione da Tiffany" img_calendar={ventotto_ot}  />
+                </Col>
+                <Col>
+                    <EventoRiquadro text="Gita della Firenze dantesca" img_calendar={tredici} />
                 </Col>
             </Row>
             <Row className="mt-3">
                 <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
+                    <EventoRiquadro text="Q&A: Hunger Games" img_calendar={ventisette_nov} />
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
-                </Col>
-            </Row>
-            <Row className="mt-3">
-                <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
-                </Col>
-                <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro text=" 'I miserabili' in scena" img_calendar={due_dic} />
                 </Col>
             </Row>
             <Row className="mt-3">
                 <Col>
-                    <EventoRiquadro text="Gita della firenze dantesca" />
+                    <EventoRiquadro text="CINEFORUM: Mrs. Dalloway" img_calendar={dodici} />
                 </Col>
                 <Col>
-                    <EventoRiquadro text="Colazione da Tiffany" />
+                    <EventoRiquadro text="Q&A: Il Signore degli Anelli" img_calendar={venti}  />
                 </Col>
             </Row>
         </Container>
@@ -102,10 +111,10 @@ function Eventi(props) {
     );
 }
 
-function EventoRiquadro({ text }) {
+function EventoRiquadro({ text, img_calendar }) {
     return (
       <Container
-        className="d-flex bg-info justify-content-center"
+        className="d-flex bg-primary justify-content-center"
         style={{
           borderRadius: "20px",
         }}
@@ -113,7 +122,7 @@ function EventoRiquadro({ text }) {
         <Row className="mb-1 mt-1">
             <Col>
                 <img 
-                    src={sei_nov} 
+                    src={img_calendar} 
                     style={{ 
                         width: "200px", 
                     }}
