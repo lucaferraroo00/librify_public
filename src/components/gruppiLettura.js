@@ -11,6 +11,14 @@ import "./styles.css";
 import {MenuList} from "./menuList.js"
 import norw_wood from "./cuore_spez.png"
 import Modal from 'react-bootstrap/Modal';
+import brevi_lib1 from "./brevi_lib1.jpg"
+import brevi_lib2 from "./brevi_lib2.jpg"
+import crime_lib1 from "./crime_lib1.jpg"
+import crime_lib2 from "./crime_lib2.jpg"
+import russi_lib1 from "./russi_lib1.jpg"
+import russi_lib2 from "./russi_lib2.jpg"
+import spezzati_lib1 from "./spezzati_lib1.jpg"
+import spezzati_lib2 from "./spezzati_lib2.jpg"
 
 
 
@@ -63,32 +71,26 @@ function GruppiLettura(props) {
                 </h2>
                 </Col>
             </Row>
-            <Row className="m-3">
+            <Row className="m-5">
             <Col>
-            <GruppoRiquadro text="Se ti sei appena lasciato" grp_image={norw_wood} modal_title={"Gruppo libri per single"}></GruppoRiquadro>
+            <GruppoRiquadro text="Se ti sei appena lasciato" lib_img1={spezzati_lib1} lib_img2={spezzati_lib2} modal_title={"Gruppo per cuori spezzati"}></GruppoRiquadro>
             </Col>
             </Row>
-            <Row className="m-3">
+            <Row className="m-5">
             <Col>
-            <GruppoRiquadro text="Libri russi (RU)" modal_title={"Gruppo libri russi"} grp_image={norw_wood} ></GruppoRiquadro>
+            <GruppoRiquadro text="Libri russi (RU)" lib_img1={russi_lib1} lib_img2={russi_lib2} modal_title={"Gruppo per appasionati russi"}  ></GruppoRiquadro>
             </Col>
             </Row>
-            <Row className="m-3">
+            <Row className="m-5">
             <Col>
-            <GruppoRiquadro text="Meno di 150 pagine" modal_title={"Gruppo libri brevi"} grp_image={norw_wood}></GruppoRiquadro>
+            <GruppoRiquadro text="Meno di 150 pagine" lib_img1={brevi_lib1} lib_img2={brevi_lib2} modal_title={"Gruppo per lettori con poco tempo"} ></GruppoRiquadro>
             </Col>
             </Row>
-            <Row className="m-3">
+            <Row className="m-5">
             <Col>
-            <GruppoRiquadro text="True Crime" ></GruppoRiquadro>
+            <GruppoRiquadro text="True Crime" lib_img1={crime_lib1} lib_img2={crime_lib2} modal_title={"Gruppo per amanti del crimine"} ></GruppoRiquadro>
             </Col>
-            </Row>
-            <Row className="m-6">
-            <Col>
-            <GruppoRiquadro text="Per conoscere il mondo" grp_image={norw_wood}></GruppoRiquadro>
-            </Col>
-            </Row>
-            
+            </Row>            
         </Container>
         </Col>
         </Row>
@@ -96,7 +98,7 @@ function GruppiLettura(props) {
     );
 }
 
-function GruppoRiquadro({ text, grp_image, modal_title }) {
+function GruppoRiquadro({ text, lib_img1, lib_img2, modal_title }) {
 
     const [show, setShow] = useState(false);
 
@@ -113,19 +115,19 @@ function GruppoRiquadro({ text, grp_image, modal_title }) {
           <Row>
             <Col className="d-flex justify-content-center">
           <img 
-                      src={grp_image} 
+                      src={lib_img1} 
                       style={{ 
                         width: "100%", // Make it take full width of its container
-                        maxWidth: "80px", // Sets a max width limit
+                        maxWidth: "150px", // Sets a max width limit
                       }}
                   />
                   </Col>
                   <Col className="d-flex justify-content-center">
                   <img 
-                      src={grp_image} 
+                      src={lib_img2} 
                       style={{ 
                         width: "100%", // Make it take full width of its container
-                        maxWidth: "80px", // Sets a max width limit
+                        maxWidth: "150px", // Sets a max width limit
                       }}
                   />
                   </Col>
@@ -142,7 +144,7 @@ function GruppoRiquadro({ text, grp_image, modal_title }) {
           }}
           onClick={handleShow}
         >
-          <Row className="d-flex mb-1 mt-1">
+          <Row className="d-flex p-3 mb-2 mt-2">
           <Col className="d-flex align-items-center">
           <h4 className=" text-white">{text}</h4>
           </Col>
