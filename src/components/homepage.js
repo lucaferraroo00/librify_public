@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import logo from "./Logo_Biblioteche_d0.jpg";
 import dorian from "./dorian_gray.jpg";
+import prof from "./profiloIcona.png";
+import dante from "./Portrait_de_Dante.jpg"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -64,7 +66,7 @@ function HomePage(props) {
           <div className="container mt-2">
             <RectangleComponent
               title="Dorian Gray"
-              text="This is some text inside the rectangle."
+              text="Ciao a tutti. Ho appena finito di leggere Orgoglio e Pregiudizio. Ve lo consiglio, sono sicuro che apprezerete :)"
               borderColor="blue" // Change the color as needed
               image={dorian}
             />
@@ -72,29 +74,25 @@ function HomePage(props) {
           <div className="container mt-5">
             <RectangleComponent
               title="Sofia Peleggi"
-              text="This is some text inside the rectangle."
+              text="@DorianGray ma non mi direeee! Anche io adoro Jane Austen"
               borderColor="blue" // Change the color as needed
+              image={prof}
             />
           </div>
           <div className="container mt-5">
             <RectangleComponent
-              title="My Title"
-              text="This is some text inside the rectangle."
+              title="Francesca D'Oriano"
+              text="Ieri ho partecipato alla serata Question and Answer sul Signore degli Anelli. Sapevo tutte le risposte, sono troppo orgogliosa!"
               borderColor="blue" // Change the color as needed
+              image={prof}
             />
           </div>
           <div className="container mt-5">
             <RectangleComponent
-              title="My Title"
-              text="This is some text inside the rectangle."
+              title="Dante Alighieri"
+              text="Sto pensando a Beatrice"
               borderColor="#1976d2" // Change the color as needed
-            />
-          </div>
-          <div className="container mt-5 mb-3">
-            <RectangleComponent
-              title="My Title"
-              text="This is some text inside the rectangle."
-              borderColor="blue" // Change the color as needed
+              image={dante}
             />
           </div>
         </Col>
@@ -131,7 +129,7 @@ function RectangleComponent({ title, text, borderColor, image }) {
         {/* Adjust size and margin */}
         {title}
       </h2>
-      <p className="text-center">{text}</p>
+      <h4 className="text-center text-secondary">{text}</h4>
     </div>
   );
 }
