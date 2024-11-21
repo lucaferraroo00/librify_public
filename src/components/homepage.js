@@ -65,23 +65,23 @@ function HomePage(props) {
           </Row>
           <div className="container mt-2">
             <RectangleComponent
-              title="Dorian Gray"
-              text="Ciao a tutti. Ho appena finito di leggere Orgoglio e Pregiudizio. Ve lo consiglio, sono sicuro che apprezerete :)"
+              title="Fra Dorian Gray"
+              text="Ciao @SofiaDeiLibri. Ho appena finito di leggere 'Atti osceni in luogo privato'. Te lo consiglio, so che lo apprezzerai :)"
               borderColor="blue" // Change the color as needed
               image={dorian}
             />
           </div>
           <div className="container mt-5">
             <RectangleComponent
-              title="Sofia Peleggi"
-              text="@DorianGray ma non mi direeee! Anche io adoro Jane Austen"
+              title="Sofia Dei Libri"
+              text="@FraDorianGray Ma daiii ! Anche a me piace Missiroli, ma ho letto solo 'Fedeltà'… Recupererò!"
               borderColor="blue" // Change the color as needed
               image={prof}
             />
           </div>
           <div className="container mt-5">
             <RectangleComponent
-              title="Francesca D'Oriano"
+              title="Virginia Woolf"
               text="Ieri ho partecipato alla serata Question and Answer sul Signore degli Anelli. Sapevo tutte le risposte, sono troppo orgogliosa!"
               borderColor="blue" // Change the color as needed
               image={prof}
