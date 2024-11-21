@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/librify_public/static/css/main.dad68781.css",
-    "main.js": "/librify_public/static/js/main.d4adbc23.js",
+    "main.js": "/librify_public/static/js/main.e0ebb42d.js",
     "static/js/453.7ad3867d.chunk.js": "/librify_public/static/js/453.7ad3867d.chunk.js",
     "static/media/cat3.jpg": "/librify_public/static/media/cat3.4f7c0327ba8889b798a9.jpg",
     "static/media/russi_lib2.jpg": "/librify_public/static/media/russi_lib2.8f6dae8da2739f9cf1e5.jpg",
@@ -28,11 +28,11 @@
     "static/media/norwegian_wood.jfif": "/librify_public/static/media/norwegian_wood.ce6855af8912e0aaebe1.jfif",
     "index.html": "/librify_public/index.html",
     "main.dad68781.css.map": "/librify_public/static/css/main.dad68781.css.map",
-    "main.d4adbc23.js.map": "/librify_public/static/js/main.d4adbc23.js.map",
+    "main.e0ebb42d.js.map": "/librify_public/static/js/main.e0ebb42d.js.map",
     "453.7ad3867d.chunk.js.map": "/librify_public/static/js/453.7ad3867d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dad68781.css",
-    "static/js/main.d4adbc23.js"
+    "static/js/main.e0ebb42d.js"
   ]
 }
