@@ -1,30 +1,38 @@
 {
   "files": {
     "main.css": "/librify_public/static/css/main.dad68781.css",
-    "main.js": "/librify_public/static/js/main.db3e5d70.js",
+    "main.js": "/librify_public/static/js/main.d4adbc23.js",
     "static/js/453.7ad3867d.chunk.js": "/librify_public/static/js/453.7ad3867d.chunk.js",
     "static/media/cat3.jpg": "/librify_public/static/media/cat3.4f7c0327ba8889b798a9.jpg",
+    "static/media/russi_lib2.jpg": "/librify_public/static/media/russi_lib2.8f6dae8da2739f9cf1e5.jpg",
     "static/media/cat1.jpg": "/librify_public/static/media/cat1.0130e894556163f35f5f.jpg",
+    "static/media/brevi_lib1.jpg": "/librify_public/static/media/brevi_lib1.36e2ca34e0969cf2b664.jpg",
     "static/media/so-lillo.png": "/librify_public/static/media/so-lillo.064f135cab5c4216e2a4.png",
+    "static/media/spezzati_lib1.jpg": "/librify_public/static/media/spezzati_lib1.7d41affd657b96c735a5.jpg",
+    "static/media/spezzati_lib2.jpg": "/librify_public/static/media/spezzati_lib2.676ccd5c26d2a919d20b.jpg",
     "static/media/io-e-te.jpg": "/librify_public/static/media/io-e-te.2b57c4996d1c9aa37371.jpg",
     "static/media/cat7.jpg": "/librify_public/static/media/cat7.844e8fa3d48fe050eb16.jpg",
+    "static/media/brevi_lib2.jpg": "/librify_public/static/media/brevi_lib2.ae19114677e10dab9394.jpg",
     "static/media/cat6.jpg": "/librify_public/static/media/cat6.404155cf187d9820fd78.jpg",
     "static/media/cat4.jpg": "/librify_public/static/media/cat4.5201194302a38dda7e7c.jpg",
     "static/media/cat5.jpg": "/librify_public/static/media/cat5.606bb6850c51371680be.jpg",
     "static/media/cuore_spez.png": "/librify_public/static/media/cuore_spez.a8a2a7e75f951f8805ff.png",
+    "static/media/Portrait_de_Dante.jpg": "/librify_public/static/media/Portrait_de_Dante.189e879e6914606d1a40.jpg",
     "static/media/cat2.jpg": "/librify_public/static/media/cat2.da86649ed74e76f6fd8f.jpg",
     "static/media/cime-temp.jpg": "/librify_public/static/media/cime-temp.0031ddc3dc559c27cf48.jpg",
     "static/media/Logo_Biblioteche_d0.jpg": "/librify_public/static/media/Logo_Biblioteche_d0.a25a1487f14d8bc88e60.jpg",
     "static/media/6_nov.png": "/librify_public/static/media/6_nov.d51bfc279170ccd59be8.png",
+    "static/media/crime_lib1.jpg": "/librify_public/static/media/crime_lib1.274c59e089b038c000c2.jpg",
+    "static/media/russi_lib1.jpg": "/librify_public/static/media/russi_lib1.4e78e276b5a314240ea8.jpg",
     "static/media/calvino_cop_1.jfif": "/librify_public/static/media/calvino_cop_1.898ef4d96af69d617e57.jfif",
     "static/media/norwegian_wood.jfif": "/librify_public/static/media/norwegian_wood.ce6855af8912e0aaebe1.jfif",
     "index.html": "/librify_public/index.html",
     "main.dad68781.css.map": "/librify_public/static/css/main.dad68781.css.map",
-    "main.db3e5d70.js.map": "/librify_public/static/js/main.db3e5d70.js.map",
+    "main.d4adbc23.js.map": "/librify_public/static/js/main.d4adbc23.js.map",
     "453.7ad3867d.chunk.js.map": "/librify_public/static/js/453.7ad3867d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dad68781.css",
-    "static/js/main.db3e5d70.js"
+    "static/js/main.d4adbc23.js"
   ]
 }
